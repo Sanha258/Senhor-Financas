@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Lato:wght@700&display=swap");
+
+:root {
+    --fonte-titulo: "Lato", sans-serif;
+    --fonte-texto: "Kalam", cursive;
+    --cor-principal: #112d4e;
+    --cor-secundaria: #3f72af;
+    --cor-tercearia: #dbe2ef;
+    --cor-fonte: #f9f7f7;
+    --cor-hover-verde: #5eb934;
+    --cor-hover-laranja: #f5910e;
+    --cor-preto: #000000;
+    --cor-fundo: linear-gradient(to bottom,var(--cor-secundaria),70%,var(--cor-principal));
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border-style: none;
+    box-sizing: border-box;
+    color: var(--cor-fonte);
+}
+
+body {
+    background: var(--cor-fundo);
+    height: 100vh;
+    text-align: center;
+    font-family: var(--fonte-texto);
+}
+
+.titulo h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 3rem;
+}
+
+.titulo h4 {
+    font-family: var(--fonte-texto);
+    font-size: 1.2rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    min-height: 95vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px 0px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+
+.esquerda, .direita {
+    width: 22%;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 5px;
+}
+
+.inputs label {
+    font-family: var(--fonte-texto);
+}
+
+.input {
+    border-radius: 5px;
+    border: 2px solid var(--cor-preto);
+    height: 32px;
+    color: var(--cor-preto);
+}
+
+.botao {
+    width: 22%;
+    height: 30px;
+    font-family: var(--fonte-texto);
+    background-color: #fff;
+    color: var(--cor-preto);
+    border: 2px solid var(--cor-preto);
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px 0px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background: var(--cor-hover-verde);
+    cursor: pointer;
+}

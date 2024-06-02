@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Lato:wght@700&display=swap");
+
+:root {
+    --fonte-titulo: "Lato", sans-serif; 
+    --fonte-texto: "Kalam", cursive; 
+    --cor-principal: #112D4E; 
+    --cor-secundaria: #3F72AF; 
+    --cor-tercearia: #DBE2EF; 
+    --cor-fonte: #F9F7F7;
+    --cor-hover-verde: #5eb934;
+    --cor-hover-laranja: #f5910e; 
+    --cor-preto: #000000; 
+    --cor-fundo: linear-gradient(to bottom, var(--cor-secundaria), 70%, var(--cor-principal)); 
+} 
+
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+} 
+
+aside {
+    height: 100vh;
+    width: 20%;
+    background: var(--cor-principal);
+    align-items: center;
+    text-align: center;
+    padding: 20px 0px;
+    position: fixed;
+    border: solid 2px var(--cor-preto);
+}
+
+.lateral h3 {
+    padding: 0px 0px 20px 0px;
+    margin: 40px 20px;
+    border-bottom: 4px solid #fff;
+}
+
+.lateral a {
+    text-decoration: none;
+    color: var(--cor-fonte);
+}
+
+.lateral a:hover {
+    color: var(--cor-hover-laranja);
+}
+ 
+
+.links li:hover {
+    cursor: pointer;
+    background-color: rgba(222, 222, 222, 0.2);
+    transition: ease-in-out .3s;
+}
+
+ul {
+    padding: 5px 0px;
+    
+}
+
+li {
+    padding: 15px 0px 15px 0px;
+    font-size: 18px;
+    font-family: var(--fonte-texto);
+}
+
+form {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20%;
+    min-height: 100vh;
+    font-family: var(--fonte-texto);
+    background: var(--cor-fundo);
+    color: var(--cor-fonte);
+}
+
+form h2 {
+    font-family: var(--fonte-titulo);
+    margin-bottom: 80px;
+    font-size: 1.8rem;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 40%;
+}
+
+.input {
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid var(--cor-preto);
+    height: 35px;
+}
+
+.botao {
+    font-size: 15px;
+    border-radius: 5px;
+    width: 39%;
+    margin: 30px 0px 5px 0px;
+    font-family: var(--fonte-texto);
+    border: 2px solid var(--cor-preto);
+    height: 35px;
+    font-weight: bold;
+    
+}
+
+.botao:hover{
+    cursor: pointer;
+    background-color: var(--cor-hover-verde);
+}

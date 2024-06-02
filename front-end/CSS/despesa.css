@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Lato:wght@700&display=swap");
+
+:root {
+    --fonte-titulo: "Lato", sans-serif; 
+    --fonte-texto: "Kalam", cursive; 
+    --cor-principal: #112D4E; 
+    --cor-secundaria: #3F72AF; 
+    --cor-tercearia: #DBE2EF; 
+    --cor-fonte: #F9F7F7; 
+    --cor-hover-verde: #5eb934;
+    --cor-hover-laranja: #f5910e;
+    --cor-preto: #000000; 
+    --cor-fundo: linear-gradient(to bottom, var(--cor-secundaria), 70%, var(--cor-principal)); 
+} 
+
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+    
+} 
+
+body {
+    background: var(--cor-fundo);
+    min-height: 100vh;
+}
+
+aside {
+    height: 100vh;
+    width: 20%;
+    background: var(--cor-principal);
+    align-items: center;
+    text-align: center;
+    padding: 20px 0px;
+    position: fixed;
+    border: solid 2px var(--cor-preto);
+}
+
+.lateral h3 {
+    padding: 0px 0px 20px 0px;
+    margin: 40px 20px;
+    border-bottom: 4px solid #fff;
+}
+
+.lateral a {
+    text-decoration: none;
+    color: var(--cor-fonte);
+}
+
+.lateral a:hover {
+    color: var(--cor-hover-laranja);
+}
+ 
+
+.links li:hover {
+    cursor: pointer;
+    background-color: rgba(222, 222, 222, 0.2);
+    transition: ease-in-out .3s;
+}
+
+ul {
+    padding: 5px 0px;
+    
+}
+
+li {
+    padding: 15px 0px 15px 0px;
+    font-size: 18px;
+    font-family: var(--fonte-texto);
+}
+
+.div-tabela {
+    padding: 20px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    min-height: 95vh;
+    
+}
+
+.div-tabela h2{
+    color: var(--cor-fonte);
+    font-size: 28px;
+}
+
+.tabela {
+    margin-top: 80px;
+    border-collapse: collapse;
+}
+
+.tabela thead {
+    background: var(--cor-principal);
+    color: var(--cor-fonte);
+    font-family: var(--fonte-titulo);
+}
+
+.tabela th {
+    padding: 8px;
+}
+
+.tabela tbody td {
+    padding: 10px;
+    font-family: var(--fonte-texto);
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--cor-tercearia);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--cor-fonte);
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.botao button {
+    padding: 5px;
+    width: 30%;
+    border-radius: 7px;
+    border: 2px solid var(--cor-preto);
+    font-family: var(--fonte-texto);
+    font-weight: bold;
+}
+
+.tabela tfoot td{
+    background: var(--cor-principal);
+    color: var(--cor-fonte);
+    padding: 8px;
+}
+
+.botoes {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.botoes button {
+    padding: 5px;
+    width: 10%;
+    border-radius: 7px;
+    border: 2px solid var(--cor-preto);
+    font-family: var(--fonte-texto);
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--cor-hover-verde);
+}
+
+span {
+    color: var(--cor-fonte);
+    font-family: var(--fonte-texto);
+}
+
+a {
+    color: var(--cor-preto);
+    text-decoration: none;
+}
+
+.div-span {
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    margin-left: 20%;
+}

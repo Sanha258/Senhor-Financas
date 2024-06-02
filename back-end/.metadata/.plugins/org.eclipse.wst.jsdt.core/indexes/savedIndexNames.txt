@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+C:\Users\Wesle\OneDrive\Área de Trabalho\senhor-financas COPIA\back-end\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1706569101.index
+210691909.index
+2621554820.index
+3195961387.index
+3156349552.index

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="/CSS/despesa.css">
+    <script src="/JS/despesa.js" defer></script>
+    <title>senhor_financas</title>
+</head>
+<body>
+    <div class="conteiner">
+        <aside class="lateral">
+            <a href="/MODULES/receita.html"><img class="logo" src="/IMG/logo.jpg"></a>
+            <a href="/MODULES/receita.html"><h3>Gerenciador Financeiro</h3></a>
+            <ul class="links">
+                <li><a href="receita.html" class="link">Receitas</a></li>
+                <li><a href="despesa.html" class="link">Despesas</a></li>
+                <li><a href="relatorios.html" class="link">Relatórios</a></li>
+                <li><a href="login.html" class="link">Sair</a></li>
+            </ul>
+        </aside>
+        <div class="div-span">
+            <div class="div-tabela">
+                <h2>Despesas</h2>
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Descrição</th>
+                            <th>Data Vencimento</th>
+                            <th>Data Pagamento</th>
+                            <th>Valor</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                    <tfoot id="tfoot">
+
+                    </tfoot>
+                </table>
+                <div class="botoes" id="botoes">
+                    <button id="buscar">Buscar</button>
+                    <button><a href="despesa.html">Limpar</a></button>
+                    <button><a href="cadastroDespesa.html">Cadastrar</a></button>
+                </div>
+            </div>
+            <span>Desenvolvido por William e Leonardo</span>
+        </div>
+    </div>
+</body>
+</html>
